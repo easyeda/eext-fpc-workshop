@@ -1,0 +1,45 @@
+{
+	"name": "fpc-workshop",
+	"uuid": "2fab9af7377a4a069084f51d9f11fc3f",
+	"displayName": "FPC 工坊",
+	"description": "FPC 设计增强工具集：压PAD焊盘变换 · PI补强厚度计算 · 走线载流/线圈阻值/过孔电流快速估算",
+	"version": "26.7.3",
+	"publisher": "EasyEDA",
+	"engines": {
+		"eda": ">=3.2.152"
+	},
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "github",
+		"url": "https://github.com/easyeda/eext-fpc-workshop"
+	},
+	"homepage": "https://github.com/easyeda",
+	"bugs": "https://github.com/easyeda/eext-fpc-workshop/issues",
+	"categories": "PCB",
+	"keywords": [
+		"FPC",
+		"SMD",
+		"压PAD",
+		"焊盘",
+		"阻焊"
+	],
+	"images": {
+		"logo": "./images/logo.png"
+	},
+	"entry": "./dist/index",
+	"headerMenus": {
+		"pcb": [
+			{
+				"id": "FpcWorkshop",
+				"title": "FPC 工坊",
+				"menuItems": [
+					{
+						"id": "OpenFpcWorkshop",
+						"title": "打开 FPC 工坊",
+						"registerFn": "openFpcWorkshop"
+					}
+				]
+			}
+		]
+	}
+}
